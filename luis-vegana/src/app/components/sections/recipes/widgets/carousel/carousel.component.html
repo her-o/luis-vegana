@@ -1,0 +1,30 @@
+<div class="carousel" [ngStyle]="{'min-height': finalHeight}">
+    <div class="carousel__btns">
+        <i class="fa fa-chevron-circle-left" (click)="setPrevious()"></i>
+        <i class="fa fa-chevron-circle-right" (click)="setNext()"></i>
+    </div>
+    <div class="carousel__content">
+        <ng-container *ngFor="let recipe of recipes">
+            <div class="carousel__content-item" 
+                [ngStyle]="{'opacity': recipe.opacity}">
+                <div class="carousel__content-item-image">
+                    <img src="{{recipe.image}}" alt="">
+                </div>
+                <div class="carousel__content-item-header-container">
+                    <div class="carousel__content-item-header">
+                        <h1 class="title"><div>{{recipe.titleAccent}}</div>{{recipe.title}}</h1>
+                        <p class="description">{{recipe.description}}</p>
+                        <a href="#" class="btn cta">Ver receta</a>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+    <div class="carousel__steps">
+        <div class="carousel__steps-step 
+        carousel__steps-step-{{currentPosition === recipe.id ? 'active': ''}}" 
+            *ngFor="let recipe of recipes" (click)="setCurrentPosition(recipe.id)">
+
+        </div>
+    </div>
+</div>

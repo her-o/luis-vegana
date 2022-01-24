@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroComponent } from './components/sections/hero/hero.component';
 import { RecipesComponent } from './components/sections/recipes/recipes.component';
+import { CarouselComponent } from './components/sections/recipes/widgets/carousel/carousel.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroComponent,
-    RecipesComponent
+    RecipesComponent,
+    CarouselComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

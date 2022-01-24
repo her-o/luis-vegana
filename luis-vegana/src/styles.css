@@ -1,22 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Poppins:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Pinyon+Script&family=Poppins:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
 :root{
     --color-primary: #D3E4CD;
-    --color-secundary: #E2C2B9;
+    --color-primary-transparent:#d3e4cd83;
+    --color-secondary: #ffd64f;
+    --color-secondary-transparent: #ffd64f1a;
     --color-dark: #102910;
+    --color-dark-transparent: #10291075;
     --color-light: #fffdfa;
-    --color-accent: #ffb85a;
+    --color-light-transparent: #fffdfa77;
+    --color-accent: rgb(255, 180, 255);
 
     --ff-Poppins: 'Poppins', sans-serif;
     --ff-Logo: 'Neonderthaw', cursive;
+    --ff-Section: 'Pinyon Script', cursive;
 
-    --fw-title: 700;
+    --fw-logo: 500;
+    --fw-title: 600;
     --fw-description: 300;
 
-    --fs-xlg: 3rem;
-    --fs-lg: 2.5rem;
+    --fs-xlg: 4.3rem;
+    --fs-lg: 3rem;
     --fs-md: 1.5rem;
-    --fs-sm: .8rem;
-    --fs-xsm: .5rem;
+    --fs-sm: 1rem;
+    --fs-xsm: .8rem;
 }
 
 * {
@@ -29,4 +36,18 @@
 html {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+    z-index: -1;
 }
+
+body {
+    background-color:  var(--color-secondary-transparent);
+}
+
+hr {
+    margin: auto;
+    width: 50%;
+    opacity: .3;
+}
+
+
