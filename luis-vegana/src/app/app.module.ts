@@ -7,6 +7,8 @@ import { HeroComponent } from './components/sections/hero/hero.component';
 import { RecipesComponent } from './components/sections/recipes/recipes.component';
 import { CarouselComponent } from './components/sections/recipes/widgets/carousel/carousel.component';
 import { HeaderComponent } from './components/header/header.component';
+import { AboutComponent } from './components/sections/about/about.component';
+import { ContactComponent } from './components/sections/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { HeaderComponent } from './components/header/header.component';
     RecipesComponent,
     CarouselComponent,
     HeaderComponent,
+    AboutComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

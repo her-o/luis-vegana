@@ -1,7 +1,11 @@
+
 .nav {
     z-index: 2;
 }
 section {
     z-index: 1;
-    margin-bottom: 2rem;
+}
+
+footer {
+    width: 100vw;
 }

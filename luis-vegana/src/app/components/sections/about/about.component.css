@@ -1,0 +1,138 @@
+.content {
+    min-height: 100%;
+    max-width: 100%;
+}
+
+.container {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    padding: 3rem;
+}
+
+.about__title-container {
+    position: absolute;
+    top: -4rem;
+   
+}
+
+.section-title {
+    font-family: var(--ff-Poppins);
+    font-weight: var(--fw-title);
+    font-size: var(--fs-xlg);
+    color: var(--color-secondary);
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.185);
+    line-height: 4rem;
+}
+
+.upper-text {
+    color: var(--color-primary);
+}
+
+.about__header-container {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about__header-first, .about__header-second, .about__header-third {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.text-container {
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: var(--color-dark);
+    z-index: 1;
+}
+
+.title {
+    font-family: var(--ff-Logo);
+    font-weight: var(--fw-title);
+    font-size: var(--fs-lg);
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-family: var(--ff-Poppins);
+    font-weight: var(--fw-description);
+    font-size: var(--fs-md);
+}
+.image-container {
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 80vh;
+    padding: 3rem;
+    border-radius: 40px 20px 40px 20px;
+    z-index: 0;
+}
+
+.image.first, .image.second, .image.third {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.blob-container {
+    width: max-content;
+    height: max-content;
+}
+
+
+.image.first {
+    background: url("src\assets\illustrations\quienSoy.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+
+.image.second {
+    background: url("src\assets\illustrations\queHago.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.blob-container.second {
+    position: absolute;
+    top: -5rem;
+    left: 5.3rem;
+    width: 100%;
+    height: 100%;
+}
+
+.image.image.third {
+    position: absolute;
+    top: -3rem;
+    left: -3rem;
+    width: 50%;
+    height: 50%;
+    background: url("src\assets\illustrations\moño.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.blob-container.third {
+    position: absolute;
+    top: -15rem;
+    left: -14rem;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+

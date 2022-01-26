@@ -4,13 +4,13 @@
     --color-primary: #D3E4CD;
     --color-primary-transparent:#d3e4cd83;
     --color-secondary: #ffd64f;
-    --color-secondary-transparent: #ffd64f1a;
+    --color-secondary-transparent: #ffd64f4d;
     --color-dark: #102910;
     --color-dark-transparent: #10291075;
     --color-light: #fffdfa;
     --color-light-transparent: #fffdfa77;
-    --color-accent: rgb(255, 180, 255);
-
+    --color-accent: #ffb4ff;
+    --color-accent-transparent: #ffb4ff78;
     --ff-Poppins: 'Poppins', sans-serif;
     --ff-Logo: 'Neonderthaw', cursive;
     --ff-Section: 'Pinyon Script', cursive;
@@ -31,6 +31,7 @@
     margin: 0;
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
+
 }
 
 html {
@@ -38,6 +39,7 @@ html {
     margin: 0;
     scroll-behavior: smooth;
     z-index: -1;
+    overflow-x: hidden;
 }
 
 body {

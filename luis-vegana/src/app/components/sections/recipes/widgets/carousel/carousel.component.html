@@ -1,7 +1,7 @@
 <div class="carousel" [ngStyle]="{'min-height': finalHeight}">
     <div class="carousel__btns">
-        <i class="fa fa-chevron-circle-left" (click)="setPrevious()"></i>
-        <i class="fa fa-chevron-circle-right" (click)="setNext()"></i>
+        <i class="fa fa-chevron-left" (click)="setPrevious()"></i>
+        <i class="fa fa-chevron-right" (click)="setNext()"></i>
     </div>
     <div class="carousel__content">
         <ng-container *ngFor="let recipe of recipes">
@@ -24,7 +24,6 @@
         <div class="carousel__steps-step 
         carousel__steps-step-{{currentPosition === recipe.id ? 'active': ''}}" 
             *ngFor="let recipe of recipes" (click)="setCurrentPosition(recipe.id)">
-
         </div>
     </div>
 </div>
