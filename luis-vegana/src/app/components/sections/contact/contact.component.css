@@ -24,13 +24,26 @@
 }
 
 .upper-container__text {
-    width: 50%;
+    position: relative;
+    width: 70%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-around;
     font-family: var(--ff-Poppins);
     padding: 3rem;
+}
+
+.description .accent {
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+
+
+.mail, .phone {
+    font-size: var(--fs-md);
 }
 
 .lower-container {
@@ -42,8 +55,18 @@
 
 .lower-container__text {
     width: 50%;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
     font-family: var(--ff-Poppins);
+}
 
+.logo {
+    font-family: var(--ff-Logo);
+    font-size: var(--fs-xlg);
 }
 
 .contact-form {

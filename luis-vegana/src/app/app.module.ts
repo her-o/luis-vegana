@@ -9,6 +9,7 @@ import { CarouselComponent } from './components/sections/recipes/widgets/carouse
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/sections/about/about.component';
 import { ContactComponent } from './components/sections/contact/contact.component';
+import { HomeComponent } from './components/pages/home-page/home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ContactComponent } from './components/sections/contact/contact.componen
     HeaderComponent,
     AboutComponent,
     ContactComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

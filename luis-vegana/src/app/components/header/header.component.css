@@ -25,7 +25,7 @@
 }
 
 .nav__social-container {
-    top: 50%;
+    top: 40%;
     float: right;
 }
 
@@ -58,7 +58,7 @@
 .nav__page-link {
     color: var(--color-light);
     font-weight: var(--fw-title);
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.493);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
     padding-top: .5rem;
     cursor: pointer;
     font-family: var(--ff-Poppins);

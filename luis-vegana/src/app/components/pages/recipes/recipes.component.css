@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100vw;
+    min-height: 100vh;
+    padding: 4rem 4rem;
+}
+
+.recipes-container {
+    max-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.recipes__category {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+.recipes__category-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.recipe__card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+
+}

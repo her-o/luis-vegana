@@ -1,37 +1,32 @@
-package arg.hero.luisvegana.model;
+package arg.hero.luisvegana.dto;
 
 import java.time.Instant;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Lob;
-import javax.persistence.Table;
+import org.springframework.web.multipart.MultipartFile;
 
-@Entity
-@Table(name="recipes")
-public class Recipe {
+public class RecipeDto {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String title;
 	private String description;
-	@Lob
 	private String content;
 	private int duration;
+	private String photo;
 	private String youtubeLink;
 	private Instant createdOn;
-	@Lob
-	private String photo;
+	private MultipartFile file;
+
 	
-	public Recipe() {
+	public RecipeDto() {
 		// TODO Auto-generated constructor stub
 	}
 	
 	public Long getId() {
 		return id;
+	}
+	
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getTitle() {
@@ -65,22 +60,6 @@ public class Recipe {
 	public void setDuration(int duration) {
 		this.duration = duration;
 	}
-
-	public String getYoutubeLink() {
-		return youtubeLink;
-	}
-
-	public void setYoutubeLink(String youtubeLink) {
-		this.youtubeLink = youtubeLink;
-	}
-
-	public Instant getCreatedOn() {
-		return createdOn;
-	}
-
-	public void setCreatedOn(Instant createdOn) {
-		this.createdOn = createdOn;
-	}
 	
 	public String getPhoto() {
 		return photo;
@@ -89,5 +68,30 @@ public class Recipe {
 	public void setPhoto(String photo) {
 		this.photo = photo;
 	}
+
+	public String getYoutubeLink() {
+		return youtubeLink;
+	}
+
+	public void setYoutubeLink(String youtubeLink) {
+		this.youtubeLink = youtubeLink;
+	}
 	
+	public Instant getCreatedOn() {
+		return createdOn;
+	}
+	
+	public void setCreatedOn(Instant createdOn) {
+		this.createdOn = createdOn;
+	}
+	
+	public MultipartFile getFile() {
+		return file;
+	}
+
+	public void setFile(MultipartFile file) {
+		this.file = file;
+	}
+	
+
 }
