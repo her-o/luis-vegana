@@ -1,0 +1,51 @@
+.container {
+    position: relative;
+    height: 100%;
+    min-width: 100%;
+    padding: 1rem 0rem;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cards__container {
+    position: absolute;
+    display: flex;
+    left: 30%;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.recipe-card{
+    min-width: 30%;
+    height: 100%;
+    padding: 1rem;
+    flex-shrink: 0;
+}
+
+.carousel__btns {
+    position: absolute;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel__btns > i {
+    opacity: .8;
+    color: var(--color-light);
+    text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.705),
+    0px -.5px 0 rgba(0, 0, 0, 0.705);
+    font-size: 45px;
+    cursor: pointer;
+    justify-content: space-between;
+    transition: all .3s ease-in-out;
+    z-index: 998;
+}
+
+.carousel__btns > i:hover {
+    opacity: 1;
+}
